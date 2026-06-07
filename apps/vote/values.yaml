@@ -1,6 +1,6 @@
 replicaCount: 2
 
-image:
+image: /:753b6ee7f355e2aaaf73af39d1fb782998167a69
   repository: 428156589409.dkr.ecr.us-east-1.amazonaws.com/my-app/vote
   tag: latest
   pullPolicy: IfNotPresent
