@@ -1,0 +1,18 @@
+replicaCount: 1
+
+image:
+  repository: 428156589409.dkr.ecr.us-east-1.amazonaws.com/my-app/worker
+  tag: latest
+  pullPolicy: IfNotPresent
+
+postgresql:
+  host: postgresql
+  port: 5432
+  database: db
+  user: vote_user
+  existingSecret: postgresql
+  secretPasswordKey: password
+
+redis:
+  host: redis-master
+  port: 6379

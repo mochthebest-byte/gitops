@@ -1,0 +1,25 @@
+replicaCount: 2
+
+image:
+  repository: 428156589409.dkr.ecr.us-east-1.amazonaws.com/my-app/vote
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+  targetPort: 80
+  protocol: TCP
+  name: http
+
+postgresql:
+  host: postgresql
+  port: 5432
+  database: db
+  user: vote_user
+  existingSecret: postgresql
+  secretPasswordKey: password
+
+redis:
+  host: redis-master
+  port: 6379
