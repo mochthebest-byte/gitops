@@ -1,6 +1,6 @@
 replicaCount: 1
 
-image: /:753b6ee7f355e2aaaf73af39d1fb782998167a69
+image: /:e75baa71d6491bcca1519b4824a04d5b56621942
   repository: 428156589409.dkr.ecr.us-east-1.amazonaws.com/my-app/worker
   tag: latest
   pullPolicy: IfNotPresent
